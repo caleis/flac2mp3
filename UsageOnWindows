@@ -1,0 +1,25 @@
+Step-by-step "Beginner's guide" to use flac2mp3 on Windows (tested on Windows 10 v1809)
+
+In Windows 10
+Turn on "Windows Subsystem for Linux”
+Install Ubuntu from MS Store
+
+Setup folder structure in Windows. Example:
+Copy script file flac2mp3.sh to folder C:\Users\<username>\Flac_tools (from https://github.com/caleis/flac2mp3 )
+Flac files in folder C:\Users\<username>/Music/flac/
+Create target folder (must be created in advance) C:\Users\<username>/Music/Mp3/flac/
+
+Setup/Prep in Ubuntu, needed only once:
+sudo apt-get install -y flac
+sudo apt-get install -y lame
+# By default Ubuntu for windows maps Windows drive C drive as /mnt/c in Ubuntu
+# if external drive to be used (e.g. D) then use drvfs:
+# $ sudo mkdir /mnt/d
+# $ sudo mount -t drvfs D: /mnt/d
+# navigate to folder /mnt/c/Users/<username>/Flac_tools/
+chmod 755 flac2mp3.sh
+
+Script execution example in Ubuntu:
+# navigate to folder /mnt/c/Users/<username>/Music/
+# Execute:
+ ../Flac_tools/flac2mp3.sh -DMp3/ flac
