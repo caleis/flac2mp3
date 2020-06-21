@@ -337,3 +337,7 @@ Search for ambiguous naming:
 Once directory system is converted to hierarchical, the flac2mp3 and flaclist
 tools will not work properly. Those would need to be modified, but that work is
 pending.
+
+Usage under Windows
+===================
+See newly added document, thanks to szebegyi for contribution
