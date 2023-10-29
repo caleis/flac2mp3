@@ -1,6 +1,5 @@
----
-title: FLAC2MP3 batch FLAC to MP3 converter
----
+# FLAC2MP3 batch FLAC to MP3 converter
+
 Find the [scripts](https://github.com/caleis/flac2mp3) on Github.
 
 Versions covered in this description
